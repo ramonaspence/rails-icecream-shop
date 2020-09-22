@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  available: false
+  featured: false
+  seasonal: false
+  date_made: 2020-09-22 19:28:24
+
+two:
+  name: MyString
+  description: MyText
+  available: false
+  featured: false
+  seasonal: false
+  date_made: 2020-09-22 19:28:24
