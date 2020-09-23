@@ -1,0 +1,28 @@
+<%= form_with model: @ice_creams, local: true do |form| %>
+
+   <p>
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+    </p>
+    <p>
+        <%= form.label :description %>
+        <%= form.text_area :description %>
+    </p>
+    <p>
+        <%= form.label :available %>
+        <%= form.check_box :available %>
+    </p>
+
+    <p>
+        <%= form.label :featured %>
+        <%= form.check_box :featured %>
+    </p>
+    <p>
+        <%= form.label :date_churned %>
+        <%= form.datetime_field :date_churned %>
+    </p>
+    <p>
+        <%= form.submit %>
+    </p>
+
+<% end %>
