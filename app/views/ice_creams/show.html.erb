@@ -1,0 +1,33 @@
+<p>
+  <strong>Title:</strong>
+  <%= @ice_cream.name %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @ice_cream.description %>
+</p>
+
+<p>
+  <strong>Available</strong>
+  <%= @ice_cream.available %>
+</p>
+
+<p>
+  <strong>Featured:</strong>
+  <%= @ice_cream.featured %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @ice_cream.date_made.strftime('%m/%d') %>
+</p>
+
+
+<%# Update link Here  %>
+<%= link_to 'Back', ice_creams_path %>
+
+<%= link_to 'Edit', edit_ice_cream_path(@ice_cream) %>
+<%= link_to 'Delete', ice_cream_path(@ice_cream),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %>
